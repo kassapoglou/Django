@@ -57,6 +57,18 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-150900548-1');
+	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -145,6 +157,8 @@
 								<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 									<div class="slider-text-inner text-center">
 										<h1><strong>ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ DJANGO FRAMEWORK</strong></h1>
+										<h2><strong><span>ΕΝΟΤΗΤΑ 1 - 
+											DJANGO INSTALLATION</span></strong></h2>
 										<h2><strong><span><a
 														href="https://kassapoglou.github.io/main/index.html">Home</a> |
 													<a
@@ -171,19 +185,9 @@
 									</div>
 									<div class="desc desc2">
 										<h3 align="center"><a
-												href="https://kassapoglou.github.io/Django/django-framework.html">ΔΩΡΕΑΝ
-												ΜΑΘΗΜΑΤΑ DJANGO FRAMEWORK</a></h3>
-										              <p>Το Django είναι ένα πολύ δυνατό σε χαρακτηριστικά python web framework που μαθαίνεται εύκολα. Μπορείτε σε ένα πολύ μικρό χρονικό διάστημα να δημιουργήσετε απλές web εφαρμογές ή πολύπλοκες εφαρμογές μεγάλης κλίμακας με δυνατότητες επέκτασης (scaling) και ενσωμάτωσης (integration) με άλλα συστήματα.</p>
-
-
-
-
-                    <p>Αυτό που κάνει το Django ελκυστικό τόσο για αρχάριους όσο και για προχωρημένους προγραμματιστές είναι η ικανότητα του να προσφέρει web εφαρμογές έτοιμες να μπουν στην παραγωγή σε πολύ μικρό χρονικό διάστημα.</p>
-
-
-
-                    <p>Όπως σε κάθε καινούργιο μάθημα, έτσι και σε αυτό θα ξεκινήσουμε με την σωστή εγκατάσταση του Django συνδυάζοντας το με έναν έτοιμο για παραγωγή web server, και μετά θα δημιουργήσουμε βήμα-προς-βήμα μια εφαρμογή για blog. Θα μπορέσετε πολύ γρήγορα, αφού κατανοήσετε πως τα διάφορα components του Django framework αλληλοεπιδρούν μεταξύ τους να δημιουργήσετε την πρώτη σας Django web εφαρμογή.</p>
-
+												href="https://kassapoglou.github.io/Django/django-framework.html">ΕΝΟΤΗΤΑ 1 - 
+												DJANGO INSTALLATION</a></h3>
+										             
 
                    <center> <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick" />
@@ -192,8 +196,133 @@
 <img alt="" border="0" src="https://www.paypal.com/en_GR/i/scr/pixel.gif" width="1" height="1" />
 </form></center>
                     <h1 align="center">ΕΝΟΤΗΤΕΣ</h1>
-                    <p >Ενότητα 1 - <a href="unit-1-django-installation.html"><font color="#0000CC">Django Installation</font> </a><br /></p>
+                    <p >Στο σημερινό δωρεάν μάθημα Django, θα δούμε τα βήματα που χρειάζονται 
+						για να δημιουργήσουμε σωστά ένα καινούργιο Django project. Στο τέλος 
+						αυτής της ενότητας θα έχουμε το Django περιβάλλον έτοιμο στον υπολογιστή μας 
+						έτσι ώστε να έχουμε την δυνατότητα από την επόμενη κιόλας ενότητα να δημιουργούμε 
+						Django web εφαρμογές.</p>
 
+					<p>Πριν ακόμα αρχίσουμε να μιλάμε για το Django framework θα πρέπει 
+						να έχουμε εγκαταστήσει Python 3 στον υπολογιστή μας. Αυτά τα βήματα 
+						τα έχουμε δείξει ήδη στο δωρεάν μάθημα Python που μπορείτε να βρείτε 
+						εδώ:<a href="https://kassapoglou.github.io/python/python-unit1-installation-and-creation-of-simple-project.html.">
+							<font color="#0000CC">(https://kassapoglou.github.io/python/python-unit1-installation-and-creation-of-simple-project.html.)</font>
+						</a> </p>
+
+					<p>Το επόμενο μας βήμα είναι να επιλέξουμε ποιο περιβάλλον ανάπτυξης Django 
+						εφαρμογών να εγκαταστήσουμε. Υπάρχουν πολλά και δωρεάν Integrated Development 
+						Environments (IDEs) που μας επιτρέπουν την δημιουργία Django εφαρμογών. Αυτό που θα 
+						επιλέξουμε εμείς για τα μαθήματα μας είναι το PyCharm Community Edition (CE) το οποίο 
+						μπορείτε να κατεβάσετε από εδώ:
+						<a href="https://www.jetbrains.com/pycharm/download/#section=windows">
+							<font color="#0000CC">(https://www.jetbrains.com/pycharm/download/#section=windows.)</font>
+						</a>
+						 </p>
+
+						 <img src="unt1/uni1-pic1.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+						 <p></p>
+
+						 <p>Αφού ολοκληρώσετε την εγκατάσταση, ξεκινήστε το PyCharm. Στο 
+							 παράθυρο “Welcome to PyCharm” πατάμε την επιλογή NEW PROJECT για να δημιουργήσουμε 
+							 ένα καινούργιο python project. Αφού δημιουργήσουμε το κατάλληλο Python περιβάλλον 
+							 θα προσθέσουμε και το Django framework. Αλλά ας μην βιαζόμαστε. Πατάμε λοιπόν στο 
+							 NEW PROJECT.</p>
+							 <img src="unt1/uni1-pic2.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+							 <p></p>
+
+							 <p>Στο πεδίο Location, πατάμε το εικονίδιο του folder για να ορίσουμε που στον σκληρό μας δίσκο επιθυμούμε να δημιουργήσουμε το καινούργιο Python Project.</p>
+
+							 <p>Στην επιλογή New environment using αφήνουμε την προεπιλεγμένη επιλογή Virtualenv. Θα μιλήσουμε σε λίγο τι ακριβώς είναι το virtual περιβάλλον. </p>
+
+							 <p>Στο πεδίο Base interpreter εμφανίζεται η έκδοση της Python που έχουμε ήδη εγκαταστήσει στον υπολογιστή μας. Την Python θα την ανακαλύψει αυτόματα το PyCharm. Αν όχι, μπορείτε να πατήσετε το βέλος και από το dropdown μενού να την επιλέξετε.</p>
+
+							 <p>Τέλος, επειδή δεν δημιουργούμε ένα απλό Python Project, δεν θα χρειαστούμε την δημιουργία ενός αρχικού αρχείου Python. Οπότε αφαιρέστε το check mark από την επιλογή Create a main.py welcome script.</p>
+
+							 <p>Όταν έχετε ολοκληρώσει όλες τις παραπάνω ρυθμίσεις, μπορείτε να πατήσετε το κουμπί CREATE.</p>
+
+							 <img src="unt1/uni1-pic3.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+							 <p></p>
+						
+							 <p>Η δομή του καινούργιου project θα πρέπει να είναι ως εξής:</p>
+
+							 <img src="unt1/uni1-pic4.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+							 <p></p>
+
+							 <p>Αν παρατηρήσετε προσεκτικά, θα δείτε ότι έχουμε δημιουργήσει ένα virtual περιβάλλον Python μέσα στο οποίο μπορούμε, από το επόμενο κιόλας βήμα, να εγκαταστήσουμε το Django. Αλλά τι είναι ένα virtual περιβάλλον και γιατί το χρειαζόμαστε?</p>
+
+							 <p>Σκεφτείτε ότι έχετε συνηθίσει να γράφετε κώδικα σε Django 2.2.19 και τώρα ανακαλύπτετε ότι το Django 3.1.7 είναι διαθέσιμο και θέλετε να το ανακαλύψετε περισσότερο. Επίσης, ενώ έχετε εγκαταστήσει την Python 7 θέλετε να δοκιμάσετε την νέα έκδοση του Django με την τελευταία έκδοση της Python που είναι 3.9.2. Πως μπορείτε να δημιουργήσετε δύο διαφορετικά projects που περιέχουν διαφορετικές εκδόσεις Python, διαφορετικές εκδόσεις του Django και ίσως και διαφορετικές support libraries και Python packages? Αυτός ακριβώς είναι ο λόγος για τον οποίο δημιουργήθηκε η ιδέα το να έχουμε virtual περιβάλλον. Κάθε virtual περιβάλλον περιέχει την δική του έκδοση Python που θα ορίσουμε, όπως και την δική του έκδοση Django (αν το επιθυμούμε). Το ένα περιβάλλον είναι απομονωμένο από το άλλο και μπορούμε να δημιουργήσουμε όσα διαφορετικά virtual environments θέλουμε ανάλογα με τις ανάγκες των projects στα οποία εργαζόμαστε την εκάστοτε φορά. Ένα ακόμα πλεονέκτημα που έχετε όταν χρησιμοποιείτε virtual περιβάλλον είναι ότι δεν χρειάζεται να έχετε administration δικαιώματα για να εγκαταστήσετε τα Python πακέτα. Αυτός είναι ο λόγος που έχει δημιουργηθεί ένας φάκελος με το όνομα venv library root στο project μας.</p>
+
+							 <p>Για να χρησιμοποιηθεί το virtual περιβάλλον, θα πρέπει πρώτα να ενεργοποιηθεί. Το PyCharm έχει ήδη ενεργοποιήσει το virtual περιβάλλον που έχει εγκαταστήσει. Πατήστε το tab terminal στο PyCharm και παρατηρήστε ότι μπροστά από το path υπάρχει μια παρένθεση με το όνομα venv.</p>
+
+							 <img src="unt1/uni1-pic5.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+							 <p></p>
+
+							<p>Τώρα είμαστε να εγκαταστήσουμε το Django framework. Στο terminal που έχετε ανοίξει από το προηγούμενο βήμα (με το venv ενεργοποιημένο) γράφουμε την εντολή: pip install Django==3.1.7</p>
+
+							<p>Με αυτό τον τρόπο ορίζουμε ακριβώς την έκδοση του Django framework που επιθυμούμε να εγκαταστήσουμε.</p>
+
+							<img src="unt1/uni1-pic6.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+							<p></p>
+
+							<p>Το Django framework εγκαταστάθηκε με επιτυχία μέσα στο virtual περιβάλλον που δημιουργήσαμε κατά την δημιουργία του project. Τώρα στο επόμενο βήμα χρειάζεται να δημιουργήσουμε ένα Django project.</p>
+
+							<p>Ένα Django project είναι μια συλλογή από settings και files που συνδυάζονται μαζί για να δημιουργήσουν ένα Django website. Για να δημιουργήσουμε ένα Django project θα πρέπει να εκτελέσουμε μια ειδική εντολή που δημιουργεί αυτόματα όλα τα folders, files και κώδικα από τα οποία αποτελείται ένα Django project. </p>
+
+							<p>Ενώ βρισκόμαστε ακόμα μέσα στο virtual περιβάλλον, τώρα εκτελούμε την εντολή:</p>
+
+							<p> <strong>django-admin startproject elearning .</strong> (η τελεία είναι μέρος της εντολής)</p>
+
+							<p>Η παραπάνω εντολή θα δημιουργήσει ένα καινούργιο φάκελο στο project σας με το όνομα elearning μέσα στο οποίο θα βρίσκονται όλες οι βασικές εντολές και αρχεία που χρειάζονται για να έχετε ένα λειτουργικό Django website.</p>
+
+							<img src="unt1/uni1-pic7.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+							<p></p>
+
+							<img src="unt1/uni1-pic8.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+							<p></p>
+
+							<p>Με αυτά τα λίγα βήματα που πραγματοποιήσαμε έχουμε ολοκληρώσει την διαδικασία εγκατάστασης του Django framework και την δημιουργία ενός βασικού Django website. Τώρα μπορούμε να χρησιμοποιήσουμε τον ενσωματωμένο web server που περιέχει το Django framework για να μπορείτε να τρέξετε την Django εφαρμογή σας όσο αναπτύσσετε τον κώδικα σας. Αυτός ο web server είναι μόνο για testing και όχι για production.</p>
+
+							<p>Για να τρέξουμε το project μας, πρέπει να γράψουμε την εξής εντολή στο terminal:</p>
+
+							<p><strong>python manage.py runserver</strong></p>
+
+							<img src="unt1/uni1-pic9.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+							<p></p>
+
+							<img src="unt1/uni1-pic10.jpg" width="800" height="600" alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+							<p></p>
+
+							<p>Για να σταματήσετε τον web server πατάτε Ctrl + C μέσα στο terminal. Για τα αρχεία τα οποία δημιουργήθηκαν μέσα στο φάκελο elearning θα μιλήσουμε την επόμενη φορά.</p>
+
+							<p>Πριν κλείσουμε όμως το σημερινό δωρεάν μάθημα Django, ήθελα να εγκαταστήσουμε έναν production-ready application server έτσι ώστε και για το testing του κώδικα σας αλλά και για την παραγωγή να χρησιμοποιείτε τον ίδιο application server.</p>
+
+							<p>Από το Django 3.0 και μετά υποστηρίζεται το asgi specification. Αυτό έρχεται να αντικαταστήσει το WSGI πάνω στο οποίο στηριζόταν (και ακόμα στηρίζεται) η λειτουργία του Django. Για το τι σημαίνουν όλα αυτά θα τα καταλάβετε αργότερα ότι μιλήσουμε πολύ αναλυτικά για τα Django Channels. Για τώρα απλά ας εγκαταστήσουμε έναν web server που μπορεί να χρησιμοποιηθεί και στην παραγωγή.</p>
+
+							<p>Η επιλογή μας ονομάζεται daphne και μπορείτε να διαβάσετε σχετικές πληροφορίες 
+								στο site του 
+								Django:
+								<a href="https://docs.djangoproject.com/en/3.1/howto/deployment/asgi/daphne/">
+									<font color="#0000CC">(https://docs.djangoproject.com/en/3.1/howto/deployment/asgi/daphne/)</font>
+								</a>
+								</p>
+
+								<p>Για αρχή, ενώ το virtual περιβάλλον είναι ενεργοποιημένο, πρέπει να εγκαταστήσουμε τον web server εκτελώντας την εντολή:<strong> pip install daphne</strong></p>
+								<img src="unt1/uni1-pic11.jpg"  alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+								<p></p>
+
+								<p>Για να τρέξουμε το project μας με την daphne, γράφουμε την εξής εντολή στο terminal:
+									<strong>daphne elearning.asgi:application</strong>
+									</p>
+
+									<p>Η μόνη παράμετρο που πρέπει να αλλάξετε σε αυτή την εντολή είναι το όνομα του project που στην δική μας περίπτωση είναι elearning.</p>
+
+									<img src="unt1/uni1-pic12.jpg"  alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+									<p></p>
+
+									<img src="unt1/uni1-pic13.jpg" height="600" width="800" alt="Δωρεάν Μαθήματα και Σεμινάρια Django" class="center">
+									<p></p>
+
+									<p>Με αυτά τα βήματα ολοκληρώσαμε την προετοιμασία για να δημιουργήσουμε ένα Django website.</p>
 									</div>
 								</div>
 							</div>
